@@ -1,0 +1,19 @@
+.headv {
+    display: flex;
+    justify-content: space-between;
+    border: black;
+    border-radius: 5px;
+    background-color: #6191a926;
+    
+}
+.option-icon {
+    width:30px;
+    height:30px;
+    margin: 10px;
+}
+.searchpar {
+    height: 20px; margin: 10px;
+}
+.logo {
+    margin-right: 5px;
+}

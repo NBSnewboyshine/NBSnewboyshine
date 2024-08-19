@@ -1,0 +1,107 @@
+body {
+    background-color: #19191a;
+    height: 100%;
+}
+header {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    border-bottom-style: outset;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.world-svg {
+    width: 100px; /* Adjust size as needed */
+    height: 80px;
+}
+
+.logo-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(255, 139, 6);
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+white-space: nowrap;}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #292929;
+    border-color: rgb(233, 157, 59);
+}
+.content {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.content .signing .sign-in {
+    color: #4d4c4c;
+}
+.content .signing .name {
+background-color: #575454;
+height: 35px;
+    border-radius: 6px;
+    border-color: azure;
+    width: 200px;
+}
+.content .signing .p {
+    color: #969696;
+}
+
+.content .signing {
+    display: grid;
+}
+.footer {
+    border-top-style: groove;
+    border-top-color: rgb(172, 83, 10);
+    height: 100px;
+    background-color: #383737;
+    padding-bottom: 90px;
+    border-bottom-right-radius: 20px;
+    }
+    
+    .footer .links {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    
+    .footer .sign {
+        margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #097c5f;
+    display: flex;
+    justify-content: center;
+    }
+    .logo-container-till {
+        position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    }
+    

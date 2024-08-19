@@ -1,0 +1,207 @@
+/* styles.css */
+body {
+    background-color: #19191a;
+background-image: image-set("E:\documents\nbsnewboyshine\39cd365a63c1de4ee2c4f3e61b3298b6.jpg");
+}
+header {
+    background-color: #664b243b;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-style: outset;
+    justify-content: space-around;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.world-svg {
+    width: 100px; /* Adjust size as needed */
+    height: 80px;
+}
+
+.logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 139, 6);
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #292929;
+    border-color: rgb(233, 157, 59);
+}
+
+/* Slider menu styling */
+.slider-menu {
+display: none; /* Hidden by default */
+position: absolute;
+background-color: #eeeeee4f;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 10px;
+margin-left: 60px;
+}
+
+/* Show the slider menu when hovering over the link or menu itself */
+#services-link:hover + .slider-menu,
+.slider-menu:hover {
+display: block;
+}
+
+.slider-menu a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.slider-menu a:hover {
+background-color: #ddd;
+}
+
+/* Adjust nav position relative for the slider menu */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e98f08af;
+    padding: 20px 0;
+    border-bottom: 1px solid #b5b4c2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding:10px 40px;
+}
+
+
+
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#contacts-section {
+    margin: 20px;
+}
+
+#contact-list, #contact-selector-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-list li, #contact-selector-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#video-call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#video-call-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px 0;
+}
+
+video {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+#video-call-controls, #contact-selector {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    border-top-style: groove;
+    border-top-color: rgb(172, 83, 10);
+    align-content: space-around;
+    height: 100px;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    color: #ff7a0e;
+
+}
+footer .sign {
+   
+    font-size: 25px;
+    font-weight: bold;
+    color: #097c5f;
+}
+.foot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.logo-container-foot {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}

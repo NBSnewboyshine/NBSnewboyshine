@@ -1,0 +1,166 @@
+body {
+    background-color: #19191a;
+background-image: image-set("E:\documents\nbsnewboyshine\39cd365a63c1de4ee2c4f3e61b3298b6.jpg");
+}
+header {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-style: outset;
+    justify-content: space-around;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.world-svg {
+    width: 100px; /* Adjust size as needed */
+    height: 80px;
+}
+
+.logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 139, 6);
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #292929;
+    border-color: rgb(233, 157, 59);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e98f08af;
+    padding: 20px 0;
+    border-bottom: 1px solid #b5b4c2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    /* Adjust nav position relative for the slider menu */
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding:10px 40px;
+}
+
+/* Slider menu styling */
+.slider-menu {
+display: none; /* Hidden by default */
+position: absolute;
+background-color: #eeeeee4f;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 10px;
+margin-left: 60px;
+}
+
+/* Show the slider menu when hovering over the link or menu itself */
+#services-link:hover + .slider-menu,
+.slider-menu:hover {
+display: block;
+}
+
+.slider-menu a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.slider-menu a:hover {
+background-color: #ddd;
+}
+
+.glass-baer {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    display: flow;
+    }
+    .glass-baerimg {
+        width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    opacity: 70%;
+    border-radius: 50px;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        justify-content: center;
+    }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    border-top-style: groove;
+    border-top-color: rgb(172, 83, 10);
+    align-content: space-around;
+    height: 100px;
+}
+footer a {
+    text-decoration: none;
+    color: #ff7a0e;
+
+}
+footer .sign {
+   
+    font-size: 25px;
+    font-weight: bold;
+    color: #097c5f;
+}
+.foot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.logo-container-foot {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}

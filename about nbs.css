@@ -1,0 +1,134 @@
+body {
+    background-color: #19191a;
+background-image: image-set("E:\documents\nbsnewboyshine\39cd365a63c1de4ee2c4f3e61b3298b6.jpg");
+}
+header {
+    border-right: groove;
+    background-color: #303030;
+    padding: 10px;
+    border-bottom: 1px solid #a39f9f;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.world-svg {
+    width: 100px; /* Adjust size as needed */
+    height: 80px;
+}
+
+.logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 139, 6);
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #292929;
+    border-color: rgb(233, 157, 59);
+}
+
+.content {
+        margin: 10px;
+}
+.h1div{
+    background-color: #a9a786;
+    border-bottom: solid;
+    border-bottom-color: #a25d04;
+    border-left-style: ridge;
+}
+.h1{
+    background-color: #d7d6bf;
+    width: 45%;
+    display: inline-table;
+    border-bottom: solid;
+    border-bottom-color: #a25d04;
+    border-top-right-radius: 60px;
+}
+.p {
+    font-size: medium;
+    color: #f3680b;
+    padding-right: 5px;
+}
+.h2 {
+    color: #0db2ff;
+    background-color: #d7d6bf;
+    width: 30%;
+    display: inline-table;
+    border-bottom: solid;
+    border-bottom-color: #a25d04;
+    border-top-left-radius: 60px;
+    padding-left: 25px;
+}
+.content.dav {
+    height: 270px;
+    width: 260px;
+    background: #b5a5a585;
+    margin: 10px;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    border-top-style: groove;
+    border-top-color: rgb(172, 83, 10);
+    align-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: #3b3939;
+}
+footer a {
+    text-decoration: none;
+    color: #ff7a0e;
+
+}
+footer .sign {
+   
+    font-size: 25px;
+    font-weight: bold;
+    color: #097c5f;
+}
+.foot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.logo-container-foot {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
