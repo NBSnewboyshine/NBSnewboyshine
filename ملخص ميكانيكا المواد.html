@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سمنار جامعي</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    /* هيدر */
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .welcome-text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .welcome-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .welcome-text p {
+      font-size: 1.5rem;
+    }
+
+    .typewriter {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: monospace;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      width: 0;
+      animation: typing 5s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 270px }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    /* شريط جانبي زجاجي */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-right: 1px solid rgba(255, 255, 255, 0.18);
+      color: white;
+      transition: left 0.4s ease;
+      padding: 60px 20px;
+      z-index: 1001;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 15px 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li::before {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, #a0e9ff, #ffffff, #a0e9ff);
+      box-shadow: 0 0 8px #c6f1ff;
+      transition: width 0.4s ease;
+      border-radius: 10px;
+    }
+
+    .sidebar ul li:hover::before {
+      width: 100%;
+    }
+
+    .sidebar ul li:hover {
+      color: #e0f8ff;
+      text-shadow: 0 0 10px #ffffffaa;
+    }
+
+    /* زر القائمة */
+    .menu-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    .menu-btn div {
+      background-color: white;
+      height: 4px;
+      margin: 6px 0;
+      transition: 0.4s;
+      border-radius: 2px;
+    }
+
+    .menu-btn.open div:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-btn.open div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-btn.open div:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .welcome-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <!-- زر القائمة -->
+  <div class="menu-btn" onclick="toggleSidebar(this)">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- الشريط الجانبي -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li>الرئيسية</li>
+      <li>حول السمنار</li>
+      <li>فريق العمل</li>
+      <li>التواصل</li>
+    </ul>
+  </div>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="overlay"></div>
+    <div class="welcome-text">
+      <h1>مرحبًا بكم في صفحة سمنارنا البسيطة!</h1>
+      <p>أهلاً وسهلاً بكم</p>
+    </div>
+    <div class="typewriter">تحت إشراف المجموعة الثالثة</div>
+  </header>
+
+  <script>
+    function toggleSidebar(btn) {
+      btn.classList.toggle("open");
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
